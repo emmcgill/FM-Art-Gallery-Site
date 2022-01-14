@@ -1,0 +1,91 @@
+:root {
+    --clr-pale-orange: hsl(24, 56%, 63%);
+    --clr-black: hsl(0, 0%, 8%);
+    --clr-grey: hsl(0, 0%, 27%);
+    --clr-white: hsl(0, 0%, 100%);
+    --ff-big-shoulders: 'Big Shoulders Display', cursive;
+    --ff-outfit: 'Outfit', sans-serif;
+    --fw-out-200: 200;
+    --fw-out-300: 300;
+    --fw-400: 400;
+    --fw-big-500: 500;
+    --fw-big-600: 600;
+    --fw-big-700: 700;
+    --fw-big-800: 800;
+    --fw-big-900: 900;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* HERO */
+.hero > img {
+    position: absolute;
+    z-index: -1;
+    height: 550px;
+    max-width: 425px;
+    width:100%;
+}
+
+.hero > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 260px;
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+    text-decoration:  none;
+    text-transform: uppercase;
+    font-family: var(--ff-big-shoulders);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 1rem 0 1rem;
+    letter-spacing: 5px;
+    margin-left: .25rem;
+    margin-bottom: 7rem;
+    margin-bottom: 478px;
+}
+
+.hero > a > img {
+    background-color: var(--clr-pale-orange);
+    height: 72px;
+    width: 55px;
+    padding: 1.5rem 1.25rem;
+    margin-left: -20px; 
+}
+
+/* TABLET */
+@media (min-width: 768px){
+    .hero > img {
+        width: 100%;
+        max-width: 850px;
+    }
+    .hero > a {
+        margin-left: 2.75rem;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px){
+    
+    .hero > img {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .hero > img {
+        max-width: 1440px;
+    }
+
+    .hero > a {
+        margin-left: 9.65rem;
+    }
+
+}
+
+
+

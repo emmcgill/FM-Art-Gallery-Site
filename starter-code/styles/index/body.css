@@ -1,0 +1,50 @@
+:root {
+    --clr-pale-orange: hsl(24, 56%, 63%);
+    --clr-black: hsl(0, 0%, 8%);
+    --clr-grey: hsl(0, 0%, 27%);
+    --clr-white: hsl(0, 0%, 100%);
+    --ff-big-shoulders: 'Big Shoulders Display', cursive;
+    --ff-outfit: 'Outfit', sans-serif;
+    --fw-out-200: 200;
+    --fw-out-300: 300;
+    --fw-400: 400;
+    --fw-big-500: 500;
+    --fw-big-600: 600;
+    --fw-big-700: 700;
+    --fw-big-800: 800;
+    --fw-big-900: 900;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 425px;
+    margin: 0 auto;
+
+}
+
+/* TABLET */
+@media (min-width: 768px){
+    
+    body {
+        max-width: 850px;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px){
+    
+    body {
+        max-width: 1024px;
+    }
+}
+
+@media(min-width: 1440px) {
+    body {
+        max-width: 1440px;
+    }
+}

@@ -1,0 +1,123 @@
+:root {
+    --clr-pale-orange: hsl(24, 56%, 63%);
+    --clr-black: hsl(0, 0%, 8%);
+    --clr-grey: hsl(0, 0%, 27%);
+    --clr-white: hsl(0, 0%, 100%);
+    --ff-big-shoulders: 'Big Shoulders Display', cursive;
+    --ff-outfit: 'Outfit', sans-serif;
+    --fw-out-200: 200;
+    --fw-out-300: 300;
+    --fw-400: 400;
+    --fw-big-500: 500;
+    --fw-big-600: 600;
+    --fw-big-700: 700;
+    --fw-big-800: 800;
+    --fw-big-900: 900;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main {
+    background-color:black;
+    color: var(--clr-white);
+}
+
+main > h1 {
+    text-transform: uppercase;
+    font-family: var(--ff-big-shoulders);
+    font-size: 700;
+    font-size: 2.75rem;
+    padding: 2.25rem 1rem;
+}
+
+main > section {
+    padding-left: 1rem;
+}
+
+main > section > h2 {
+    font-family: var(--ff-big-shoulders);
+    text-transform: uppercase;
+    color: var(--clr-pale-orange);
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+main > section > p {
+    font-family: var(--ff-outfit);
+    font-weight: 200;
+    font-size: 1.05rem;
+    line-height: 1.5rem;
+}
+
+main > section > .city-state {
+    margin-bottom: 1.25rem;
+}
+
+main > section > .city-state > span {
+    display: block;
+}
+
+main > section > .about-museum {
+    max-width: 325px;
+    padding-bottom: 2.8rem;
+    
+}
+
+/* TABLET */
+@media (min-width: 768px){
+    main {
+        display: flex;
+        justify-content: space-around;
+        gap: 7rem;
+        padding: 5rem 1rem 5rem 2rem;
+    }
+
+    main > h1 {
+        padding: 0;
+        font-size: 3.5rem;
+        line-height: 3.25rem;
+    }
+
+    main > h1 > span {
+        display: block;
+    }
+
+    main > section > .museum-address-hours {
+        padding-top: 30rem;
+    }
+
+    main > section > .about-museum {
+        max-width: 375px;
+        padding: 0;
+    }
+}
+
+/* DESKTOP */
+@media(min-width:1024px){
+    main {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main > h1 {
+        font-size: 4.5rem;
+        line-height: 4.25rem;
+    }
+
+    main > section > .about-museum {
+        max-width: 410px;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    main {
+        display: flex;
+        padding: 5rem 4rem 6rem 12rem;
+        gap: 21.25rem;
+    }
+}
+

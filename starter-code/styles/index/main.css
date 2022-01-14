@@ -1,0 +1,192 @@
+:root {
+    --clr-pale-orange: hsl(24, 56%, 63%);
+    --clr-black: hsl(0, 0%, 8%);
+    --clr-grey: hsl(0, 0%, 27%);
+    --clr-white: hsl(0, 0%, 100%);
+    --ff-big-shoulders: 'Big Shoulders Display', cursive;
+    --ff-outfit: 'Outfit', sans-serif;
+    --fw-out-200: 200;
+    --fw-out-300: 300;
+    --fw-400: 400;
+    --fw-big-500: 500;
+    --fw-big-600: 600;
+    --fw-big-700: 700;
+    --fw-big-800: 800;
+    --fw-big-900: 900;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* MAIN */
+main {
+    padding: 0 1rem;
+}
+
+main > .grid-top >  #grid-1 {
+    margin-bottom: 1.15rem;
+    width: 100%;
+}
+
+main > .grid-top > .about-wrapper > .title {
+    font-family: var(--ff-big-shoulders);
+    text-transform: uppercase;
+    font-weight: var(--fw-big-900);
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+main > .grid-top > .about-wrapper > .title > span {
+    display: block;
+}
+
+main > .grid-top > .about-wrapper > .sub-title {
+    font-family: var(--ff-outfit);
+    font-weight: var(--fw-out-200);
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+main > .grid-bottom > #grid-2 {
+    margin-bottom: 1.35rem;
+    width: 100%;
+}
+
+main > .grid-bottom > #grid-3 {
+    margin-bottom: 1.35rem;
+    width: 100%;
+}
+
+main > .grid-bottom > .inspire-wrapper {
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+    padding: 2rem 1.5rem;
+    margin-bottom: 5.5rem;
+}
+
+main > .grid-bottom > .inspire-wrapper > h2 {
+    text-transform: uppercase;
+    font-family: var(--ff-big-shoulders);
+    font-weight: var(--fw-big-900);
+    font-size: 3rem;
+    margin-bottom: 1.75rem;
+    line-height: 2.8rem;
+}
+
+main > .grid-bottom > .inspire-wrapper > p {
+    font-family: var(--ff-outfit);
+    font-weight: var(--fw-out-200);
+    line-height: 1.75rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* TABLET */
+@media (min-width: 768px){
+
+    main {
+        margin-bottom: 2rem;
+        padding: 0 2.25rem;
+    }
+
+    main > .grid-top {
+        display: grid;
+        grid-template-areas: "about grid-1";
+        grid-template-columns: 40% 60%;
+        margin-bottom: 1rem;
+    }
+
+    main > .grid-top > #grid-1 {
+        grid-area: grid-1;
+        margin-bottom: 0;
+    }
+
+    main > .grid-top > .about-wrapper {
+        grid-area: about;
+        margin-bottom: 0;
+    }
+
+    main > .grid-top > .about-wrapper > .title {
+        max-width: 295px;
+    }
+
+    main > .grid-top > .about-wrapper > .sub-title {
+        max-width: 250px;
+    }
+
+    main > .grid-bottom {
+        display: grid;
+        grid-template-areas: 
+        "grid-2 grid-3"
+        "grid-2 inspire";
+        grid-template-columns: 55% auto;
+        gap: 1rem;
+    }
+
+    main > .grid-bottom > #grid-2 {
+        grid-area: grid-2;
+        margin-bottom: 0;
+        height: 100%;
+    }
+
+    main > .grid-bottom > #grid-3 {
+        grid-area: grid-3;
+        margin-bottom: 0;
+    }
+
+    main > .grid-bottom > .inspire-wrapper {
+        grid-area: inspire;
+        margin-bottom: 0;
+        padding: 5.5rem 2rem 3rem 3rem;
+        height: 396px;
+    }
+
+
+    main > .grid-bottom > .inspire-wrapper > .sub-title {
+        max-width: 200px;
+
+    }
+
+}
+
+/* DESKTOP */
+@media (min-width: 1440px) {
+    main {
+        padding: 0 8rem;
+    }
+
+    main > .grid-top > .about-wrapper > .title {
+        font-size: 3.75rem;
+        max-width: 300px;
+    }
+
+    main > .grid-top > .about-wrapper > .title > span {
+        display: initial;
+    }
+
+    main > .grid-top > .about-wrapper > .sub-title {
+        max-width: 305px;
+        font-size: 1.25rem;
+        line-height: 1.95rem;
+    }
+
+    main > .grid-bottom > .inspire-wrapper {
+        padding: 4rem 5rem;
+    }
+
+    main > .grid-bottom > .inspire-wrapper > .title {
+        font-size: 3.75rem;
+        line-height: 3.5rem;
+        max-width: 350px;
+    }
+
+    main > .grid-bottom > .inspire-wrapper > .sub-title {
+        max-width: 325px;
+        font-size: 1.25rem;
+        line-height: 1.95rem;
+    }
+}
